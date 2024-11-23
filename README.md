@@ -99,6 +99,7 @@ Unit tests are provided to ensure the reliability of the application. To run all
 
 ---
 ## **Running the Application with Docker**
+After clonning the repository, and going into the main folder:
 1. Build the Docker image:
    ```bash
    docker build -t movie-database-app .
