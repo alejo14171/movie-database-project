@@ -1,7 +1,10 @@
 from movie_database.strategies import (
-    PopularityStrategy, DurationStrategy, YearStrategy, ActorStrategy, SimilarMoviesStrategy
+    PopularityStrategy,
+    DurationStrategy,
+    YearStrategy,
+    ActorStrategy,
+    SimilarMoviesStrategy,
 )
-from movie_database.models import Movie
 from movie_database.database import MovieDatabase
 import unittest
 
@@ -18,7 +21,9 @@ class TestStrategies(unittest.TestCase):
         strategy = PopularityStrategy()
         movies = strategy.classify(self.db)
         self.assertGreater(len(movies), 0)
-        self.assertGreaterEqual(movies[0].calculate_popularity(), movies[-1].calculate_popularity())
+        self.assertGreaterEqual(
+            movies[0].calculate_popularity(), movies[-1].calculate_popularity()
+        )
 
     def test_duration_strategy(self):
         """Test DurationStrategy."""

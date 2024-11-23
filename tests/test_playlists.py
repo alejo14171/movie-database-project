@@ -8,8 +8,32 @@ class TestPlaylist(unittest.TestCase):
     def setUp(self):
         """Create a sample playlist with movies."""
         self.movies = [
-            Movie("Movie 1", 2020, ["Action"], [5], 1000, "Storyline 1", ["Actor A"], "PT90M", "2020-01-01", "PG", ""),
-            Movie("Movie 2", 2019, ["Drama"], [4], 500, "Storyline 2", ["Actor B"], "PT110M", "2019-01-01", "PG", ""),
+            Movie(
+                "Movie 1",
+                2020,
+                ["Action"],
+                [5],
+                1000,
+                "Storyline 1",
+                ["Actor A"],
+                "PT90M",
+                "2020-01-01",
+                "PG",
+                "",
+            ),
+            Movie(
+                "Movie 2",
+                2019,
+                ["Drama"],
+                [4],
+                500,
+                "Storyline 2",
+                ["Actor B"],
+                "PT110M",
+                "2019-01-01",
+                "PG",
+                "",
+            ),
         ]
         self.playlist = Playlist(self.movies)
 

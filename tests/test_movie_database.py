@@ -2,6 +2,7 @@ import unittest
 from movie_database.models import Movie
 from movie_database.database import MovieDatabase
 
+
 class TestMovieDatabase(unittest.TestCase):
 
     def setUp(self):
@@ -17,7 +18,7 @@ class TestMovieDatabase(unittest.TestCase):
             duration="PT120M",
             release_date="2020-01-01",
             content_rating="PG-13",
-            poster_image="https://example.com/poster.jpg"
+            poster_image="https://example.com/poster.jpg",
         )
         self.db = MovieDatabase("data/movies.json")
 
@@ -35,7 +36,6 @@ class TestMovieDatabase(unittest.TestCase):
         expected_popularity = (average_rating * 0.7) + (viewer_score * 0.3)
         popularity = self.movie.calculate_popularity()
         self.assertAlmostEqual(popularity, expected_popularity)
-
 
     def test_load_data(self):
         """Test that data is loaded into the database."""

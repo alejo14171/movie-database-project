@@ -1,5 +1,5 @@
-import unittest
 from movie_database.database import MovieDatabase
+
 
 def test_load_data():
     db = MovieDatabase("data/movies.json")

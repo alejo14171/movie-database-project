@@ -5,6 +5,7 @@ from pathlib import Path
 # Agrega el directorio raíz del proyecto al PYTHONPATH
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+
 def run_all_tests():
     """Run all tests in the 'tests' folder."""
     loader = unittest.TestLoader()
@@ -22,6 +23,7 @@ def run_all_tests():
         print("All tests passed!")
     else:
         print("Some tests failed or encountered errors.")
+
 
 if __name__ == "__main__":
     run_all_tests()

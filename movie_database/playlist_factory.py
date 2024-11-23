@@ -4,8 +4,9 @@ from movie_database.strategies import (
     DurationStrategy,
     YearStrategy,
     ActorStrategy,
-    SimilarMoviesStrategy
+    SimilarMoviesStrategy,
 )
+
 
 class PlaylistFactory:
     def __init__(self, db):
