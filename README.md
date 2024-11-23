@@ -118,18 +118,6 @@ Unit tests are provided to ensure the reliability of the application. To run all
 2. **Strategy Pattern**:
    - Implemented in `strategies.py` for different classification logic (e.g., popularity, year, actor).
 
----
-
-## **Future Enhancements**
-1. **Error Handling**:
-   - Better validations for invalid inputs.
-   - Graceful handling of missing or corrupt data files.
-2. **Scalability**:
-   - Move from JSON files to a database (e.g., SQLite, PostgreSQL) for larger datasets.
-3. **Web Interface**:
-   - Create a web or API-based version for broader accessibility.
-4. **Dockerization**:
-   - Provide a `Dockerfile` for containerized deployment.
 
 ---
 
