@@ -180,8 +180,16 @@ To check for style issues:
    ```bash
    flake8 movie_database tests
    ```
+### Auto-formatting with `black`
+To automatically fix style issues:
+
+1. Ensure `black` is installed:
+   ```bash
+   pip install black
+   ```
+2. Run the formatter:
+   ```bash
+   black movie_database tests
+   ```
 
 ---
-
-## **License**
-This project is licensed under the MIT License. See `LICENSE` for more details.

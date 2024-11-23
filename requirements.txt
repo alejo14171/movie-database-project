@@ -1,13 +1,4 @@
-# Core dependencies
-statistics  # Built-in library (does not need installation but listed for clarity)
-
-# JSON parsing
-ujson==5.8.0  # Optional but faster JSON handling library
-
-# Testing
-unittest-xml-reporting==3.0.4  # Reporting for unittest results (optional)
-pytest==7.4.0  # Optional for extended testing
-
-# Formatting and Linting (Optional)
-black==23.3.0  # Code formatter
-flake8==6.1.0  # Linter for Python code
+# Core dependencies for the application
+flake8==6.1.0
+black==23.9.1
+unittest-xml-reporting==3.0.4
